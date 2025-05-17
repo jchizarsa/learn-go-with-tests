@@ -4,7 +4,7 @@
  * 3. Each test function only takes in one argument `t *testing.T`
  * 4. Must `import "testing"` to use the *testing.T type.
  */
-package main
+package hello
 
 import "testing"
 
