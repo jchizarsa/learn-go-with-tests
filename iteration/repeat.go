@@ -1,13 +1,14 @@
+// Test with `go test -bench=. -benchmem`
 package iteration
+
+import "strings"
 
 // Example for loops: https://gobyexample.com/for
 
-const repeatCount = 5
-
-func Repeat(character string) string {
-	var repeated string
+func Repeat(character string, repeatCount int) string {
+	var repeated strings.Builder
 	for i := 0; i < repeatCount; i++ {
-		repeated += character
+		repeated.WriteString(character)
 	}
-	return repeated
+	return repeated.String()
 }

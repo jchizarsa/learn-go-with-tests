@@ -14,6 +14,7 @@ func TestAdder(t *testing.T) {
 	}
 }
 
+// See example in documentation by doing `pkgsite -open .`
 func ExampleAdd() {
 	sum := Add(1, 5)
 	fmt.Println(sum)
